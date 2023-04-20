@@ -1,0 +1,49 @@
+:root {
+
+    /* Type */
+    --type-scaling-ratio: 1.25;
+    --header1: calc(3rem * (var(--type-scaling-ratio)));
+    --header2: calc(2.4rem * (var(--type-scaling-ratio)));
+    --header3: calc(1.9rem * (var(--type-scaling-ratio)));
+    --header4: calc(1.5rem * (var(--type-scaling-ratio)));
+    --header5: calc(1.3rem * (var(--type-scaling-ratio)));
+    --body: calc(1rem * (var(--type-scaling-ratio)));
+  
+    /* Colors: */
+    --main-color: #F15025;
+    --secondary-color: #E6E8E6;
+    --disabled_state-placeholder: #CED0CE;
+    --alerts-attention_focus: #FDE74C;
+    --black: #000000;
+    --unnamed-color-ffffff: #FFFFFF;
+    --unnamed-color-080808: #080808;
+    
+    /* Font/text values */
+    --unnamed-font-family-oswald: Oswald;
+    --unnamed-font-family-josefin-sans: Josefin Sans;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-300: 300px;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-14: 14px;
+    --unnamed-font-size-16: 16px;
+    --unnamed-font-size-18: 18px;
+    --unnamed-font-size-20: 20px;
+    --unnamed-font-size-31: 31px;
+    --unnamed-font-size-39: 39px;
+    --unnamed-font-size-48: 48px;
+    --unnamed-font-size-22-43000030517578: 22.43000030517578px;
+    --unnamed-font-size-25-229999542236328: 25.229999542236328px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-16: 16px;
+    --unnamed-line-spacing-18: 18px;
+    --unnamed-line-spacing-20: 20px;
+    --unnamed-line-spacing-22: 22px;
+    --unnamed-line-spacing-24: 24px;
+    --unnamed-line-spacing-26: 26px;
+    --unnamed-line-spacing-27: 27px;
+    --unnamed-line-spacing-30: 30px;
+    --unnamed-line-spacing-35: 35px;
+    --unnamed-line-spacing-45: 45px;
+    --unnamed-line-spacing-54: 54px;
+    --unnamed-text-transform-titlecase: titlecase;
+    }

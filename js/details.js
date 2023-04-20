@@ -61,7 +61,7 @@ client.getEntry(id).then(function (entry) {
         boughtTogether.appendChild(similarResource);
 
         var similarImg = document.createElement('img');
-        similarImg.src = entry.fields.cover.fields.file.url;
+        similarImg.src = resource.fields.cover.fields.file.url;
         similarResource.appendChild(similarImg);
 
         var similarName = document.createElement('h4');
@@ -69,7 +69,7 @@ client.getEntry(id).then(function (entry) {
         similarResource.appendChild(similarName);
 
         var similarPrice = document.createElement('h5');
-        similarPrice.innerHTML = 'USD$'+entry.fields.price;
+        similarPrice.innerHTML = 'USD$'+resource.fields.price;
         similarResource.appendChild(similarPrice);
 
         var similarButtons = document.createElement('div');
