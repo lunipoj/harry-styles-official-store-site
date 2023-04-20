@@ -55,12 +55,35 @@ client.getEntry(id).then(function (entry) {
     } else if (entry.fields.frequentlyBoughtWith){
         references = entry.fields.frequentlyBoughtWith
     }
+
     references.forEach(function (resource) {
-        var similiarResource = document.createElement('div');
-        boughtTogether.appendChild(similiarResource);
-        var name = document.createElement('h4');
-        name.innerHTML = resource.fields.name;
-        similiarResource.appendChild(name);
+        var similarResource = document.createElement('div');
+        boughtTogether.appendChild(similarResource);
+
+        var similarImg = document.createElement('img');
+        similarImg.src = entry.fields.cover.fields.file.url;
+        similarResource.appendChild(similarImg);
+
+        var similarName = document.createElement('h4');
+        similarName.innerHTML = resource.fields.name;
+        similarResource.appendChild(similarName);
+
+        var similarPrice = document.createElement('h5');
+        similarPrice.innerHTML = 'USD$'+entry.fields.price;
+        similarResource.appendChild(similarPrice);
+
+        var similarButtons = document.createElement('div');
+        similarResource.appendChild(similarButtons);
+
+        var similarCart = document.createElement('button');
+        similarCart.type ='button';
+        similarCart.innerHTML = 'Add to Cart';
+        similarButtons.appendChild(similarCart);
+
+        var similarWish = document.createElement('button');
+        similarWish.type = 'button';
+        similarWish.innerHTML = 'Add to Wishlist';
+        similarButtons.appendChild(similarWish);
     });
     
 });
