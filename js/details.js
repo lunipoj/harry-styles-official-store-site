@@ -8,6 +8,7 @@ var client = contentful.createClient({
 });
 
 var productDetails = document.getElementById('product-details');
+var boughtTogether = document.getElementById('bought-together');
 
 
 client.getEntry(id).then(function (entry) {
@@ -44,45 +45,22 @@ client.getEntry(id).then(function (entry) {
     descHeading.innerHTML = 'Description';
     detailsButtonsLine.appendChild(descHeading);
 
-    // var productCover = document.createElement('img');
-    // productCover.src = entry.fields.productCover.fields.file.url;
-    // detailsDiv.appendChild(productCover);
-    // detailsDiv.appendChild(productTextContainer);
+    var detailsDesc = document.createElement('p');
+    detailsDesc.innerHTML = entry.fields.desc;
+    detailsTextContainer.appendChild(detailsDesc);
 
-    // var productText = document.createElement('div');
-    // productText.classList.add ('details-text');
-    // productTextContainer.appendChild(productText);
-
-    // var productName = document.createElement('h2');
-    // productName.innerHTML = entry.fields.productName;
-    // productText.appendChild(productName);
+    var references
+    if (entry.fields.boughtTogether){
+        references = entry.fields.boughtTogether
+    } else if (entry.fields.frequentlyBoughtWith){
+        references = entry.fields.frequentlyBoughtWith
+    }
+    references.forEach(function (resource) {
+        var similiarResource = document.createElement('div');
+        boughtTogether.appendChild(similiarResource);
+        var name = document.createElement('h4');
+        name.innerHTML = resource.fields.name;
+        similiarResource.appendChild(name);
+    });
     
-    // var productPrice = document.createElement('p');
-    // productPrice.innerHTML = 'CAD$'+entry.fields.productPrice;
-    // productText.appendChild(productPrice);
-
-    // var productColor = document.createElement('p');
-    // productColor.innerHTML = entry.fields.productColor;
-    // productText.appendChild(productColor);
-
-    // var productSize = document.createElement('p');
-    // productSize.innerHTML = 'Size:'+ entry.fields.productSize + 'in';
-    // productText.appendChild(productSize);
-    
-    // var buttonsDiv = document.createElement('div');
-    // buttonsDiv.classList.add ('desc-buttons');
-    // buttonsDiv.className += ' desc-buttons';
-    // productTextContainer.appendChild(buttonsDiv);
-
-    // var cartButton = document.createElement("button");
-    // cartButton.innerHTML = "Add to cart";
-    // buttonsDiv.appendChild(cartButton);
-
-    // var wishlistButton = document.createElement("button");
-    // wishlistButton.innerHTML = "Add to wishlist";
-    // buttonsDiv.appendChild(wishlistButton);
-    
-    // var descDiv = document.createElement('div');
-    // descDiv.classList.add ('desc-div');
-    // detailsDiv.appendChild(descDiv);
 });
