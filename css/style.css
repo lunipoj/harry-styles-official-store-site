@@ -276,6 +276,7 @@ header div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 8rem 0 ;
 
 }
 
@@ -321,4 +322,94 @@ footer{
 
 .contact-footer{
     display: flex;
+}
+
+/* details */
+
+#bought-together{
+    display: flex;
+    gap: 3.25rem;
+    margin: 4rem 0;
+}
+
+#product-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.details-text{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.review-container{
+    display: flex;
+    gap: .5rem;
+}
+
+.review-container a{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.details-buttons{
+    display: flex;
+    gap: 3rem;
+
+}
+
+.product-cover{
+    min-width: 35rem;
+}
+
+.desc-details{
+    overflow: scroll;
+    max-width:30rem;
+}
+
+/* Cart */
+
+.cart-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-content{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 0 10rem;
+}
+
+.text-cart{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 50%;
+    min-width: 29.63rem;
+}
+
+.flex-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-cart img{
+    min-height: 2rem;
+}
+
+.flex-cart a{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+span{
+    border: 2px solid var(--black);
+}
+
+.divider{
+    width: 100%;
 }

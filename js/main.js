@@ -88,7 +88,7 @@ client.getEntries ({content_type: 'hsNew'}).then(function (entries) {
         newArrival.appendChild(newPrice);
 
         var newButtons = document.createElement('div');
-        newButtons.classList.add('best-buttons')
+        newButtons.classList.add('best-buttons');
         newArrival.appendChild(newButtons);
         
         var nAddToCart = document.createElement('button');
