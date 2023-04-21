@@ -13,7 +13,7 @@
 <body>
 
     <header>
-        <a href="./index.html"> <img src="#" alt="Brand Logo" class="logo"></a>
+        <a href="./index.html"> <img src="./img/HST_black_logo_2000x.png" alt="Brand Logo" class="logo"></a>
         <nav>    
             <a class="menu-icon" href="#"><i class="fa fa-bars"></i></a>
             <a href="">Shop</a>
@@ -23,33 +23,41 @@
             <a href="">Order Tracking</a>
         </nav>
         <div>
-            <input type="text" name="search-bar" id="" placeholder="Search The Harry Style Store">
-            <a href="">Sign In</a>
-            <!-- <a href=""><img src="" alt=""></a> cart -->
+            <input class="search-bar" type="text" name="search-bar" id="" placeholder="Search The Harry Style Store ">
+            <a href="" class="sign-in">Sign In</a>
+            <a href=""><img src="./assets/cart-icon.svg" alt=""></a> 
         </div>
     </header>   
 
     <div class="hero">
-        <h1>From Tour Apparel to Tie-In Pieces</h1>
-        <button type="button">Browse our shop</button>
+        <h1>From Tour Apparel to <br>Tie-In Pieces</h1>
+        <button type="button" class="hero-button">Browse our shop</button>
     </div>
 
     <div class="wrapper">
 
         <section>
             <h2>Our Best Selling Pieces</h2>
-            <div id="best-sellers">
+            
+            <div class="grid">
+                <div id="best-sellers" class="carousel">
+                
+                </div>
+    
+                <button type="button" id="browse-more" class="hero-button">Browse More</button>
 
             </div>
 
-            <button type="button">Browse More</button>
         </section>
 
         <section>
             <h2>New Arrivals</h2>
-            <div id="new-arrivals">
+            <div class="grid">
+                <div id="new-arrivals" class="carousel">
+                </div>
+                <button type="button" id="browse-more" class="hero-button">Browse More</button>
+
             </div>
-            <button type="button">Browse More</button>
         </section>
 
         <section>
@@ -62,8 +70,8 @@
                     <h3>Harry's House</h3>
                     <h5>The New Album By Harry Styles Out Now</h5>
                     <div>
-                        <button type="button">Go To Official Website</button>
-                        <button type="button">Buy Related Merchandise</button>
+                        <button type="button" class="white-button">Go To Official Website</button>
+                        <button type="button" class="orange-button">Buy Related Merchandise</button>
                     </div>
                 </div>
 
@@ -73,47 +81,51 @@
     </div>
 
     <footer>
-        <div>
-            <a href="./index.html"> <img src="#" alt="Brand Logo in White" class="logo"></a>
-            <div>
-                <img src="" alt="">
-                <h5>123 Mockup St., New York</h5>
+        <div class="footer-section-container">
+            <div class="footer-section">
+                <a href="./index.html"> <img src="./img/HST_white_logo_2000x.png" alt="Brand Logo in White" class="logo"></a>
+                <div class="contact-footer">
+                    <img src="./assets/map-icon.svg" alt="pin icon">
+                    <h5>123 Mockup St., New York</h5>
+                </div>
+                <div class="contact-footer">
+                    <img src="./assets/phone-icon.svg" alt="">
+                    <h5>(+1) 123 456 7890</h5>
+                </div>
+                <div class="contact-footer">
+                    <img src="./assets/celphone-icon.svg" alt="">
+                    <h5>(+1) 123 456 7891</h5>
+                </div>
+                <div class="contact-footer">
+                    <img src="./assets/email-icon.svg" alt="">
+                    <h5>contact@hstylesofficial.com</h5>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h5>(+1) 123 456 7890</h5>
+            <div class="footer-section">
+                <h3>Our Policy</h3>
+                <div class="footer-section">
+                    <h5>Return & Refund Policy</h5>
+                    <h5>Report Security Issues</h5>
+                    <h5>Shipping Policy</h5>
+                    <h5>Billing Terms & Conditions</h5>
+                    <h5>Terms Of Service</h5>
+                    <h5>Privacy Policy</h5>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h5>(+1) 123 456 7891</h5>
+            <div class="footer-section">
+                <h3>Information</h3>
+                <div class="footer-section">
+                    <h5>About Us</h5>
+                    <h5>Contact Us</h5>
+                    <h5>FAQ'S</h5>
+                    <h5>DMCA</h5>
+                </div>
             </div>
-            <div>
-                <img src="" alt="">
-                <h5>contact@hstylesofficial.com</h5>
-            </div>
-        </div>
-        <div>
-            <h3>Our Policy</h3>
-            <div>
-                <h5>Return & Refund Policy</h5>
-                <h5>Report Security Issues</h5>
-                <h5>Shipping Policy</h5>
-                <h5>Billing Terms & Conditions</h5>
-                <h5>Terms Of Service</h5>
-                <h5>Privacy Policy</h5>
-            </div>
-        </div>
-        <div>
-            <h3>Information</h3>
-            <div>
-                <h5>About Us</h5>
-                <h5>Contact Us</h5>
-                <h5>FAQ'S</h5>
-                <h5>DMCA</h5>
-            </div>
+            
         </div>
 
         <p>Copyright 2022 © Harry Styles Store LLC</p>
+     
     </footer>
 
 </body>
