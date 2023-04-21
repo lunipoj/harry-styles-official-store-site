@@ -657,95 +657,159 @@ span{
 
 @media screen and (max-width: 30em){ /* mobile < 480px */
     
-    :root{
-      --type-scaling-ratio: 1;
+    :root {
+        --type-scaling-ratio: 1;
+    }
+
+    nav a{
+        display: none;
     }
     
     .menu-icon{
-      display: block;
-      padding: 0 1rem 0 10rem;
+        display: block;
+        color: var(--main-color);
+        padding: .25rem;
     }
+   
     
-    .menu{
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-    }
-  
-    .logo{
-      height: 4rem;
-    }
-  
-    nav {
-      height: 20px;
-      overflow: hidden;
-    }
-  
     .nav-expanded{
-      height: 100px;
+        min-height: 1.25rem;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    
     }
-  
-    nav a{
-      flex-basis: 100%;
+
+    .nav-expanded a{
+        display: block;
+        
     }
-  
+
+    
+    .orange-button{
+        min-height: 2.5rem;
+        min-width: 8rem;
+    }
+    
+    .white-button{
+        min-height: 2.5rem;
+        min-width: 8rem;
+    }
+
+    /* nav */
+      
+    header{
+        gap: .25rem;
+        flex-wrap: wrap;
+        margin: 2rem;
+    }
+
+    .search-bar{
+        display: none;
+
+    }
+
+
+    /* hero */
+
     .hero{
-      max-height: 20rem;
+        min-height: 25rem;
+        background-position: 25% 35%;
+        gap: 1.5rem;
     }
-  
+
+    .hero-button{
+        min-height: 3rem;
+        min-width: 10rem;
+        margin-left: 1.25rem;
+    }
+
     .hero h1{
-      background-color: #fcac188b;
-      padding: 7rem 1rem 1rem 2rem;
+        padding-left: 1.25rem;
     }
-  
-    #last-videos img{
-      max-width: 10rem;
+
+
+    /* Best Seller Section */
+
+    .carousel{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
     }
-  
-    #merch img{
-      max-height: 25rem;
-      margin: 0 .5rem;
-    }
-  
-    #merch a{
-      padding: 0 4rem;
-    }
-    
-    #merch button{
-      margin: 1rem 2rem;
-      padding: 1rem;
-    }
-  
-    #about-channel p{
-      text-align: justify;
-      padding: 1rem 1rem;
+
+    /* Spotlight */
+
+    .spotlight{
+        align-items:center;
+        margin: 2.5rem 0;
     }
     
-    #about-channel button{
-      margin: 1rem 3rem;
-      padding: 1rem;
-      max-width: 15rem;
+    .spotlight-text{
+        align-items: center;
+    
     }
-  
-    #about-us div{
-      display: block;
-      max-width: 15rem;
-      margin: 0 1rem;
-    }
-  
-    #about-us img{
-      display: none;
+
+    iframe{
+        max-width: 35rem;
     }
     
-    #about-us h3{
-      padding: 1rem 0;
+    /* footer */
+
+    footer{
+        min-height: 30rem;
+        gap: 4rem;
+  
     }
-  
-    #about-us p{
-      text-align: justify;
-      padding: 1rem 0rem;
+
+    .footer-section-container{
+        gap: 4rem;
+        flex-direction: column;
+
     }
+
+    /* details */
+
+
+    #product-details{
+        flex-direction: column;
+        margin: 0 1rem;
+        align-content: center;
+    }
+
+    .product-cover{
+        min-width: 10rem;
+    }
+
+    .review-container{
+        gap: 1rem;
+    }
+
+    .details-buttons{
+        gap:1.5rem;
+    }
+
+    
+    /* Cart */
+
+    .cart-header img{
+        max-height: 2rem;
+    }
+
+    .cart-content{
+        margin: 1rem 0;
+        flex-direction: column;
+    }
+
+
+    .cart-img{
+        max-width: 20rem;
+    }
+
+    .cart-img img{
+        height: 100%;
+    }
+}
+    
   
-  
-  }
+
   
